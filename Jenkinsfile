@@ -59,7 +59,7 @@ pipeline {
             }
             
             steps {
-                sh 'terraform destroy --auto-approve'
+                sh 'terraform destroy --auto-approve -lock=false'
             }
         }
     }
